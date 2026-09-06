@@ -4,6 +4,9 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import ni.junaxer.practicafx.components.CustomInput;
 import ni.junaxer.practicafx.utils.AlertUtils;
+import ni.junaxer.practicafx.utils.SceneNavigator;
+
+import static ni.junaxer.practicafx.app.AppRoutes.DASHBOARD;
 
 public class LoginController {
 
@@ -23,9 +26,7 @@ public class LoginController {
             return;
         }
         if (user.equalsIgnoreCase("admin") && password.equals("qwerty123")) {
-
-            AlertUtils.showWarning(Alert.AlertType.INFORMATION, "Bienvenido", "¡Inicio de sesión exitoso!");
-
+            SceneNavigator.cambiarPantalla(inputUser, DASHBOARD);
         } else {
             AlertUtils.showWarning(Alert.AlertType.ERROR, "Acceso denegado", "Usuario o contraseña incorrectos.");
         }
