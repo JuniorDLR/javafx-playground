@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.StackPane?>
+
+
+<fx:root type="VBox"
+         xmlns:fx="http://javafx.com/fxml"
+         style="-fx-alignment: top-left; -fx-spacing: 6px; -fx-focus-color: #077F52;">
+
+    <Label fx:id="lblTitle" style="-fx-text-fill: #7c7c7c"/>
+    
+    <StackPane>
+        <TextField fx:id="txtInput" maxWidth="Infinity" style="-fx-background-radius: 8px"/>
+        <PasswordField fx:id="txtPassword" maxWidth="Infinity" visible="false" style="-fx-background-radius: 8px"/>
+    </StackPane>
+
+</fx:root>

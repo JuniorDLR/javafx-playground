@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.Button?>
+
+
+<?import ni.junaxer.practicafx.components.CustomInput?>
+<StackPane style="
+      -fx-alignment: center;
+      -fx-background-color: #ececec;"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="ni.junaxer.practicafx.controllers.LoginController">
+
+
+    <VBox maxWidth="-Infinity" maxHeight="-Infinity" style="
+      -fx-alignment: center;
+      -fx-background-color: #ffffff;
+      -fx-pref-width: 320px;
+      -fx-spacing: 16px;
+      -fx-background-radius: 16px;
+      -fx-border-radius: 16px;
+      -fx-padding: 32px;">
+
+        <ImageView fx:id="imgLogo" fitWidth="180.0" preserveRatio="true" blendMode="MULTIPLY">
+            <Image url="@logo.png"/>
+        </ImageView>
+
+        <Label text="Ingresa a tu cuenta para continuar."
+               style="-fx-text-fill: #7c7c7c"/>
+
+        <CustomInput fx:id="inputUser" labelText="Usuario" promptText="Ingrese su usuario"/>
+        <CustomInput fx:id="inputPassword" labelText="Contraseña" promptText="Ingrese su contraseña" isPassword="true"/>
+
+
+        <Button
+                fx:id="btnLogin"
+                maxWidth="Infinity"
+                defaultButton="true"
+                text="Iniciar Sesión"
+                onAction="#btnLogin"
+                style="
+                -fx-background-color: #077F52;
+                -fx-text-fill: #ffffff;
+                -fx-cursor: hand;
+                -fx-background-radius: 8px"/>
+    </VBox>
+
+
+</StackPane>
