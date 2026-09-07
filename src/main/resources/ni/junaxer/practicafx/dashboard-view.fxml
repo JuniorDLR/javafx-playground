@@ -16,8 +16,8 @@
         </VBox>
     </top>
 
-    <left>
+    <center>
         <fx:include source="form-view.fxml"/>
-    </left>
+    </center>
 
 </BorderPane>

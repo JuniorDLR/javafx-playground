@@ -3,14 +3,19 @@
 
 <?import javafx.scene.layout.*?>
 
-<HBox xmlns="http://javafx.com/javafx"
+<BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            prefHeight="Infinity"
-            prefWidth="Infinity"
             style="-fx-padding: 16px;
-                   -fx-spacing: 16px;">
+                   -fx-background-color: #f1f5f9;">
 
-    <fx:include source="form-design-left-view.fxml"/>
-    <fx:include source="form-design-right-view.fxml"/>
+    <left>
+        <HBox style="-fx-padding: 0 16px 0 0;">
+            <fx:include source="form-design-left-view.fxml"/>
+        </HBox>
+    </left>
+    
+    <center>
+        <fx:include source="form-design-right-view.fxml"/>
+    </center>
 
-</HBox>
+</BorderPane>

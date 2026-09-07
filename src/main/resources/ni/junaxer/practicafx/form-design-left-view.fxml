@@ -16,7 +16,7 @@
       -fx-border-color: #AFAFAF;
       -fx-padding: 16px;
       -fx-spacing: 12px;"
-      prefHeight="Infinity" prefWidth="300.0">
+      prefHeight="Infinity" prefWidth="300.0" minWidth="300.0" maxWidth="300.0">
 
     <CustomSeparator title="Formulario"/>
     <StackPane prefWidth="Infinity"
