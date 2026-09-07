@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+
+
+<?import ni.junaxer.practicafx.components.CustomSeparator?>
+<?import ni.junaxer.practicafx.components.CustomInput?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="ni.junaxer.practicafx.controllers.FormController"
+      style="
+      -fx-background-color: #FFFFFF;
+      -fx-border-width: 1px;
+      -fx-border-color: #AFAFAF;
+      -fx-padding: 16px;
+      -fx-spacing: 12px;"
+      prefHeight="Infinity" prefWidth="300.0">
+
+    <CustomSeparator title="Formulario"/>
+    <StackPane prefWidth="Infinity"
+               prefHeight="120.0"
+               style="-fx-border-color: #cbd5e1;
+               -fx-border-width: 2px;
+               -fx-border-style: dashed;
+               -fx-background-color: #f8fafc;
+               -fx-border-radius: 6px;
+               -fx-background-radius: 6px;">
+
+        <Button fx:id="btnFoto"
+                text="ImageView (Foto)"
+                onAction="#onClickFoto"
+                prefWidth="Infinity"
+                prefHeight="Infinity"
+                style="-fx-alignment: center;
+                       -fx-background-color: transparent;
+                       -fx-text-fill: #94a3b8;
+                       -fx-cursor: hand;"/>
+
+        <ImageView fx:id="imgFoto"
+                   fitWidth="150"
+                   fitHeight="110"
+                   visible="false">
+        </ImageView>
+    </StackPane>
+
+    <CustomInput fx:id="txtNombre" labelText="Nombre del Producto" promptText="Ej. Teclado Mecánico"/>
+
+    <VBox style="-fx-spacing: 5px;">
+        <Label text="Categoría" style="-fx-font-size: 11px; -fx-text-fill: #64748b;"/>
+        <ComboBox fx:id="cmbCategoria" promptText="Seleccione una categoría..." maxWidth="Infinity"/>
+    </VBox>
+
+    <VBox style="-fx-spacing: 5px;">
+        <Label text="Etiquetas (Multiselección)" style="-fx-font-size: 11px; -fx-text-fill: #64748b;"/>
+        <ListView fx:id="listEtiquetas" prefHeight="70" style="-fx-border-color: #e2e8f0; -fx-border-radius: 4px;"/>
+    </VBox>
+
+    <CustomSeparator title="Detalles y Opciones"/>
+
+    <VBox style="-fx-spacing: 5px;">
+        <Label text="Fecha de Ingreso" style="-fx-font-size: 11px; -fx-text-fill: #64748b;"/>
+        <DatePicker fx:id="dateFecha" maxWidth="Infinity"/>
+    </VBox>
+
+    <VBox style="-fx-spacing: 5px;">
+        <Label text="Estado del Producto" style="-fx-font-size: 11px; -fx-text-fill: #64748b;"/>
+        <HBox style="-fx-spacing: 15px;">
+            <fx:define>
+                <ToggleGroup fx:id="grupoEstado"/>
+            </fx:define>
+            <RadioButton fx:id="rbActivo" text="Activo" toggleGroup="$grupoEstado" selected="true"/>
+            <RadioButton fx:id="rbInactivo" text="Inactivo" toggleGroup="$grupoEstado"/>
+        </HBox>
+    </VBox>
+
+    <VBox style="-fx-spacing: 5px;">
+        <Label text="Opciones Adicionales" style="-fx-font-size: 11px; -fx-text-fill: #64748b;"/>
+        <CheckBox fx:id="chkEnvio" text="Aplica Envío Gratis"/>
+        <CheckBox fx:id="chkImpuesto" text="Cobrar Impuesto (IVA)"/>
+    </VBox>
+
+    <Region VBox.vgrow="ALWAYS"/>
+
+    <Button fx:id="btnGuardar" text="GUARDAR PRODUCTO" maxWidth="Infinity"
+            style="-fx-background-color: #077F52; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 10px; -fx-cursor: hand; -fx-background-radius: 4px;"/>
+
+</VBox>

@@ -6,7 +6,8 @@
 <ToolBar
         xmlns:fx="http://javafx.com/fxml"
         fx:controller="ni.junaxer.practicafx.controllers.DashboardController"
-        style="-fx-spacing: 10px">
+        style="-fx-background-color: #FFFFFF; -fx-border-color: #e2e8f0; -fx-border-width: 0 0 1px 0; -fx-padding: 10px;">
+    
     <CustomButton fx:id="btnGenerar"
                   text="Generar Datos"
                   iconUrl="/ni/junaxer/practicafx/iconos/flask.png"
