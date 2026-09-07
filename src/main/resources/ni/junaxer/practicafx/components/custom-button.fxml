@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<fx:root type="Button"
+         xmlns:fx="http://javafx.com/fxml"
+         style="-fx-cursor: hand;
+         -fx-graphic-text-gap: 8px;">
+
+    <graphic>
+        <ImageView fx:id="img" fitWidth="16" fitHeight="16"/>
+    </graphic>
+
+</fx:root>

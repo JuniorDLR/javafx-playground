@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+
+<MenuBar style="-fx-background-color: #f1f5f9">
+    <Menu text="Archivo">
+        <MenuItem text="Cerrar Sessión"/>
+        <MenuItem text="Salir"/>
+    </Menu>
+
+    <Menu text="Ayuda">
+        <MenuItem text="Acerca de"/>
+    </Menu>
+</MenuBar>

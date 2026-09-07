@@ -26,8 +26,8 @@
       -fx-border-radius: 16px;
       -fx-padding: 32px;">
 
-        <ImageView fx:id="imgLogo" fitWidth="180.0" preserveRatio="true" blendMode="MULTIPLY">
-            <Image url="@logo.png"/>
+        <ImageView fitWidth="180.0" preserveRatio="true" blendMode="MULTIPLY">
+            <Image url="@iconos/logo.png"/>
         </ImageView>
 
         <Label text="Ingresa a tu cuenta para continuar."

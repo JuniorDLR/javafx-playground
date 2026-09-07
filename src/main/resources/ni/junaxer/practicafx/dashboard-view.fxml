@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-
 <?import javafx.scene.layout.*?>
 
-<?import javafx.scene.control.Label?>
-<VBox xmlns:fx="http://javafx.com/fxml"
-      style="-fx-alignment: center;
+<BorderPane
+        fx:controller="ni.junaxer.practicafx.controllers.DashboardController"
+        xmlns:fx="http://javafx.com/fxml"
+        style="-fx-alignment: center;
+        -fx-pref-width: 900px;
+        -fx-pref-height: 600px;
         -fx-background-color: #FFFFFF;">
 
-    <Label text="¡Bienvenido al Sistema!" style="-fx-font-size: 24px;"/>
+    <top>
+        <VBox style="-fx-spacing: 10px">
+            <fx:include source="menu-bar.fxml"/>
+            <fx:include source="tool-bar.fxml"/>
+        </VBox>
+    </top>
 
-</VBox>
+</BorderPane>
